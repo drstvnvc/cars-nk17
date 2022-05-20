@@ -6,7 +6,7 @@
     <h1>Cars</h1>
     <ul>
         @foreach($cars as $car)
-        <li>{{$car->producer}}: {{$car->title}}</li>
+        <li><a href="/cars/{{$car->id}}">{{$car->producer}}: {{$car->title}}</a></li>
         @endforeach
     </ul>
 </body>
